@@ -6,12 +6,17 @@
   font-family: "Raleway", "sans-serif";
 }
 
+body {
+  margin: 0;
+}
+
 a {
   /* color: #0065fc;*/
   color: inherit;
   text-decoration: none;
 }
 
+/* NAVBAR */
 nav {
   display: flex;
   align-items: center;
@@ -61,5 +66,50 @@ nav a:hover {
   .sub-nav a:hover {
     border-bottom-color: #0065fc;
     border-top-color: transparent;
+    color: #0065fc;
   }
+}
+
+/* BODY */
+
+.wrapper {
+  padding: 0 2rem;
+}
+
+.wrapper h1,
+.wrapper p {
+  margin-bottom: 1rem;
+}
+
+/* SEARCH FORM*/
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form * {
+  padding: 1rem 1.5rem;
+}
+.search-form i {
+  background-color: #f2f2f2;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.search-form input {
+  padding-right: 16rem;
+  border: 1px solid #f2f2f2;
+}
+
+.search-form input::placeholder {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.search-form button {
+  background-color: #0065fc;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  cursor: pointer;
 }
