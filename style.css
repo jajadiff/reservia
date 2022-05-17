@@ -85,10 +85,13 @@ nav a:hover {
 .search-form {
   display: flex;
   align-items: center;
+  font-size: 1.2rem;
 }
 
-.search-form * {
+.search-form *,
+.search-form input::placeholder {
   padding: 1rem 1.5rem;
+  font-size: 1.2rem;
 }
 .search-form i {
   background-color: #f2f2f2;
@@ -100,16 +103,17 @@ nav a:hover {
   border: 1px solid #f2f2f2;
 }
 
-.search-form input::placeholder {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
 .search-form button {
   background-color: #0065fc;
   color: white;
-  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 0 1rem 1rem 0;
   border: none;
   cursor: pointer;
+  opacity: 0.9;
+  transition: transform 200ms;
+}
+.search-form button:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
